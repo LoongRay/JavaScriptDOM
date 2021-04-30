@@ -1,0 +1,32 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container #list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+#list li{flex: 1;}
+
+#list li a{
+    text-decoration: none;
+}
+
+.show img{
+    width: 520px;
+    height: 400px;
+}
+
+.show p{
+    text-align: center;
+}

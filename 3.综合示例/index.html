@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <header class="logo">
+        <!-- logo图 -->
+        <img src="./img/logo.gif" alt="">
+        <!-- 导航栏 -->
+        <nav>
+            <ul class="clearfix nav_list" id="top_nav">
+                <li class="fl list_item"><a href="index.html">Home</a></li>
+                <li class="fl list_item"><a href="about.html">About</a></li>
+                <li class="fl list_item"><a href="photos.html">Photos</a></li>
+                <li class="fl list_item"><a href="live.html">Live</a></li>
+                <li class="fl list_item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="article">
+        <h1>Welcome</h1>
+        <p id="intro">Welcome to the official website of Jay Skript and the Domsters. Here, you can
+            <a href="about.html">learn more about the band</a>, view <a href="photos.html">photos of the band</a>,
+            find out about <a href="live.html">tour dates</a> and <a href="contact.html">get in touch with the
+                band</a>.
+        </p>
+        <!-- 图片轮播区 -->
+        <!-- 改用JS创建DOM生产图片轮播区:global.js中prepareSlideshow()方法 -->
+        <!-- <div id="slideshow">
+            <img src="./img/slideshow.gif" alt="" id="preview">
+        </div> -->
+    </article>
+    <script src="./js/global.js"></script>
+</body>
+
+</html>

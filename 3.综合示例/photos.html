@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <header class="logo">
+        <!-- logo图 -->
+        <img src="./img/logo.gif" alt="">
+        <!-- 导航栏 -->
+        <nav>
+            <ul class="clearfix nav_list" id="top_nav">
+                <li class="fl list_item"><a href="index.html">Home</a></li>
+                <li class="fl list_item"><a href="about.html">About</a></li>
+                <li class="fl list_item"><a href="photos.html">Photos</a></li>
+                <li class="fl list_item"><a href="live.html">Live</a></li>
+                <li class="fl list_item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article class="article">
+        <h1>Photos of the band</h1>
+        <ul id="imagegallery" class="clearfix">
+            <li class="fl">
+                <a href="img/photos/concert.jpg" title="The crowd goes wild">
+                    <img src="img/photos/thumbnail_concert.jpg" alt="the band in concert" />
+                </a>
+            </li>
+            <li class="fl">
+                <a href="img/photos/bassist.jpg" title="An atmospheric moment">
+                    <img src="img/photos/thumbnail_bassist.jpg" alt="the bassist" />
+                </a>
+            </li>
+            <li class="fl">
+                <a href="img/photos/guitarist.jpg" title="Rocking out">
+                    <img src="img/photos/thumbnail_guitarist.jpg" alt="the guitarist" />
+                </a>
+            </li>
+            <li class="fl">
+                <a href="img/photos/crowd.jpg" title="Encore! Encore!">
+                    <img src="img/photos/thumbnail_crowd.jpg" alt="the audience" />
+                </a>
+            </li>
+        </ul>
+        <!-- 图片展示区:通过JS创建 -->
+        <!-- <div id="gallery">
+            <p id="text">show picture here</p>
+            <img id="placeholder" src="./img/placeholder.gif" alt="">
+        </div> -->
+    </article>
+    <script src="./js/global.js"></script>
+</body>
+
+</html>

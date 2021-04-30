@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS动画示例</title>
+</head>
+
+<body>
+    <p id="msg">welcome!</p>
+    <script type="text/javascript">
+        function addLoadEvent(func){
+            let oldonload = window.onload;
+            if(window.onload != "function"){
+                window.onload = func;
+            }else{
+                window.onload = function(){
+                    oldonload();
+                    func();
+                }
+            }
+        }
+
+        //初始化文本位置
+        function positionMsg() {
+            if (!document.getElementById) return false;
+            if (!document.getElementById('msg')) return false;
+            let msg = document.getElementById('msg');
+            msg.style.position = 'absolute';
+            msg.style.left = "50px";
+            msg.style.top = "100px";
+            //5秒后执行动画
+            let movement = setTimeout("moveMsg()",5000);
+        }
+
+        //移动动画
+        function moveMsg(){
+            if(!document.getElementById) return false;
+            if(!document.getElementById('msg')) return false;
+            let msg = document.getElementById('msg');
+            //设置移动距离和位置
+            msg.style.position = 'absolute';
+            msg.style.top = "200px";
+            msg.style.left = "200px";
+        }
+
+        addLoadEvent(positionMsg);
+
+    </script>
+</body>
+
+</html>
